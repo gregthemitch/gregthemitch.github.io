@@ -17,6 +17,23 @@
         <!-- Font Awesome Programming icons -->
         <script src="https://kit.fontawesome.com/856a1cbeea.js" crossorigin="anonymous"></script> 
     </head>
+
+    <style>
+    /* Update */
+    .Row {
+        display: table;
+        width: 100%; /*Optional*/
+        table-layout: fixed; /*Optional*/
+        border-spacing: 10px; /*Optional*/
+    }
+    .Column {
+        display: table-cell;
+        background-color: red; /*Optional*/
+    }
+    </style>
+
+
+
     <body id="page-top">
     <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
@@ -49,7 +66,8 @@
                         Chicago, IL · (323) 896-9740 ·
                         <a href="mailto:gmitchjunior@Gmail.com">gmitchjunior@Gmail.com</a>
                     </div>
-                    <p class="lead mb-5">I am...</p>
+                    <p class="lead mb-5">
+                        I am a current student at the University of Chicago interested in the intersection of tech and service.</p>
                     <div class="social-icons">
                         <a class="social-icon" href="https://www.linkedin.com/in/gregwmitchell/"><i class="fab fa-linkedin-in"></i></a>
                         <a class="social-icon" href="https://github.com/gregthemitch"><i class="fab fa-github"></i></a>
@@ -65,17 +83,30 @@
                     <h2 class="mb-5">Experience</h2>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">Data Engineering Intern</h3>
+                            <col style="display: table; table-layout: fixed;">
+                                <div style="display: table-cell;"><h3 class="mb-0">Data Engineering Intern</h3></div>
+                                <div style="display: table-cell; scale: 2; padding-left: 10px; padding-right: 10px;"><li class="list-inline-item"><i class="fa-brands fa-python"></i></li></div>
+                                <div style="display: table-cell; scale: 2; padding-left: 10px;"><li class="list-inline-item"><i class="fa-brands fa-python"></i></li></div>
+                            </col>
                             <div class="subheading mb-3">IDinsight - Nairobi, Kenya</div>
-                            <p>Assisted in the development and deployment of an AI product (Ask-a-Metric) built on Docker, FastAPI, GPT-4o, and SQLAlchemy to provide real-time data analytics to non-profit and government leaders via a simple WhatsApp chat interface.</p>
+                            <p>
+                                Assisted in the development and deployment of Ask-a-Metric, an AI-powered, text-to-SQL tool designed to provide real-time data analytics to non-profit and government leaders via a simple WhatsApp chat interface. 
+                                In my time with IDinsight, I built core features to improve language support, database support, user feedback collection, and overall performance.
+                                I also developed automated tests and LLM output validation pipelines to prepare for SaaS deployment.                                
+                            </p>
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary">June 2024 - Present</span></div>
+                        
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Analyst III</h3>
                             <div class="subheading mb-3">Community Science (BCT Partners) - Bethesda, MD</div>
-                            <p>Provided research and analytical expertise to 10+ nonprofit organizations and governmental agencies to promote social justice.</p>
+                            <p>
+                                Provided research and analytical expertise to 10+ nonprofit organizations and governmental agencies to promote social justice.
+                                I was responsible for managing ongoing client relationships and led the research and writing of 3 major client deliverables. These deliverables included a literature review for the United Way, a housing needs assessment with for a county government, and Tableau dashboards.
+                                Additionally, I was responsible for conducting hedonic modeling and other econometric analyses in Stata and R to support housing and community development.
+                            </p>
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary">June 2022 - August 2023</span></div>
                     </div>
@@ -84,7 +115,10 @@
                             <h3 class="mb-0">Consultant I & II</h3>
                             <div class="subheading mb-3">Bates White Economic Consulting - Washington, DC</div>
                             <p>
-                                Advised economic experts, lawyers, and government officials on antitrust matters related to Fortune 500 companies.
+                                Processed and analyzed millions of observations in Stata across dozens of public and proprietary data sources. 
+                                In the Healthcare practice at Bates White, I constructed spatial analyses to evaluate market concentration in the healthcare industry for regions across the United States.
+                                I led the creation of 100s of maps, charts, and other visualizations in R, Tableau, and Excel to communicate to diverse audiences.
+
                             </p>
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary">September 2020 - June 2022</span></div>
@@ -108,7 +142,8 @@
                         <div class="flex-grow-1">
                             <h3 class="mb-0">University of Chicago</h3>
                             <div class="subheading mb-3">Masters of Science</div>
-                            <div>Computational Analysis and Public Policy Policy (Computer Science + Public Policy)</div>
+                            <div>Computer Science + Public Policy</div>
+                            <div style="font-size: smaller;">(Computational Analysis and Public Policy)</div>
                             <p>GPA: 3.85</p>
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary">August 2023 - Present</span></div>
@@ -117,8 +152,8 @@
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Pennsylvania State University</h3>
                             <div class="subheading mb-3">Masters of Science</div>
-                            <div>Energy, Environmental, and Food Economics (Applied Economics)</div>
-                            <div style="font-size: smaller;">Energy, Environmental, and Food Economics (Applied Economics)</div>
+                            <div>Applied Economics</div>
+                            <div style="font-size: smaller;">(Energy, Environmental, and Food Economics)</div>
                             <p>GPA: 3.8 something</p>
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary">August 2018 - May 2020</span></div>
@@ -179,7 +214,7 @@
                 <div class="resume-section-content">
                     <h2 class="mb-5">Awards & Certifications</h2>
                     <ul class="fa-ul mb-0">
-                        <li>
+                        <li onclick="https://courses.opencv.org/certificates/5f9c254cd0324a23ae58a76b7f864365">
                             <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
                             TensorFlow Keras Bootcamp - OpenCV University Certificate of Excellence
                         </li>

@@ -8304,6 +8304,10 @@ textarea.form-control-lg {
   visibility: hidden !important;
 }
 
+.svg-inline--fa {
+  vertical-align: .1em;
+}
+
 @media (min-width: 576px) {
   .float-sm-start {
     float: left !important;
